@@ -3,7 +3,7 @@
 A sleek, modern, and fully responsive **Food Delivery Web Application** designed for users to explore restaurants, search for food items, add items to the cart, and place orders conveniently.
 
 ## 🔗 Live Demo
-https://food-delivery-website-orcin.vercel.app/
+https://food-delivery-website-shubhams.vercel.app/
 
 ## 📌 Features
 ✅ Browse restaurants and food categories  
