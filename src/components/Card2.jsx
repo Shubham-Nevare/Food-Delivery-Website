@@ -3,6 +3,8 @@ import image1 from '../assets/image1.avif'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import { useDispatch } from 'react-redux'
 import { DecrementQty, IncrementQty, RemoveItem } from '../redux/cartSlice'
+import { toast } from 'react-toastify'
+
 
 function Card2({name, id, image, price, qty}) {
     const dispatch=useDispatch()
@@ -27,7 +29,8 @@ function Card2({name, id, image, price, qty}) {
         </div>
         <div className='flex flex-col justify-start items-end gap-6'>
             <span className='text-xl text-green-400 font-semibold'>RS. {price}</span>
-            <RiDeleteBin6Line className='w-[30px] h-[30pc] text-red-400 cursor-pointer' onClick={()=>dispatch(RemoveItem(id))}/>
+            <RiDeleteBin6Line className='w-[30px] h-[30pc] text-red-400 cursor-pointer' onClick={()=>{dispatch(RemoveItem(id)); 
+                toast.error("item removed..")}}/>
         </div>
     </div>
   )
