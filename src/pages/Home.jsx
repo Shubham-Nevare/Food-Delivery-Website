@@ -43,7 +43,7 @@ function Home() {
           {categories.map((item) => {
             return (
               <div
-                className="gap-5 w-[140px] h-[150px] bg-white flex flex-col items-start p-5 justify-start text-[20px] font-semibold text-gray-600 rounded-lg shadow-xl hover:bg-green-200 cursor-pointer transition-all duration-200"
+                className="gap-4 w-[110px] h-[120px] bg-white flex flex-col items-start p-3 justify-start text-[16px] font-semibold text-gray-600 rounded-lg shadow-xl hover:bg-green-200 cursor-pointer transition-all duration-200"
                 onClick={() => filter(item.name)}
               >
                 {item.icon}
@@ -95,31 +95,31 @@ function Home() {
           </div>
           <div className="w-full border-t-2 border-b-2 border-gray-400 mt-7 flex flex-col gap-2 p-8">
             <div className="w-full flex justify-between items-center">
-              <span className="text-lg text-gray-600 font-semibold">
+              <span className="text-base text-gray-600 font-semibold">
                 Subtotal
               </span>
-              <span className="text-green-400 font-semibold text-lg">
+              <span className="text-green-400 font-semibold text-base">
                 Rs {subtotal}/-
               </span>
             </div>
             <div className="w-full flex justify-between items-center">
-              <span className="text-lg text-gray-600 font-semibold">
+              <span className="text-base text-gray-600 font-semibold">
                 Delivery Fee
               </span>
-              <span className="text-green-400 font-semibold text-lg">
+              <span className="text-green-400 font-semibold text-base">
                 Rs {deliveryFee}/-
               </span>
             </div>
             <div className="w-full flex justify-between items-center">
-              <span className="text-lg text-gray-600 font-semibold">Taxes</span>
-              <span className="text-green-400 font-semibold text-lg">
+              <span className="text-base text-gray-600 font-semibold">Taxes</span>
+              <span className="text-green-400 font-semibold text-base">
                 Rs {taxes}/-
               </span>
             </div>
           </div>
           <div className="w-full flex justify-between items-center p-9">
-            <span className="text-2xl text-gray-600 font-semibold">Total</span>
-            <span className="text-green-400 font-semibold text-lg">
+            <span className="text-xl text-gray-600 font-semibold">Total</span>
+            <span className="text-green-400 font-semibold text-xl">
               Rs {total}/-
             </span>
           </div>
